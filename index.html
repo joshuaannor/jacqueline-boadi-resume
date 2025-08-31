@@ -1,53 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Jacqueline Boadi | Digital Marketing Resume</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <style>
+    :root {
+      --primary-color: #f5c1d1;
+      --accent-color: #7d4f44;
+      --text-color: #333;
+      --background-color: #ffffff;
+    }
+
     body {
       font-family: 'Helvetica Neue', sans-serif;
+      background-color: var(--background-color);
       margin: 0;
       padding: 0;
-      background: #fff0f4;
+      color: var(--text-color);
     }
 
     .container {
-      max-width: 960px;
-      margin: 0 auto;
-      background: white;
       display: flex;
+      max-width: 1000px;
+      margin: 2rem auto;
+      background: white;
       box-shadow: 0 0 15px rgba(0,0,0,0.1);
     }
 
     aside {
       width: 30%;
-      background-color: #fce4ec;
+      background-color: var(--primary-color);
       padding: 2rem;
-      color: #333;
+      box-sizing: border-box;
+      color: #000;
     }
 
     main {
       width: 70%;
-      padding: 2rem;
+      padding: 2rem 2.5rem;
+      box-sizing: border-box;
     }
 
     h1 {
-      margin: 0;
-      font-size: 24px;
+      margin-top: 0;
+      font-size: 26px;
+      color: var(--accent-color);
     }
 
     h2 {
       font-size: 18px;
       margin-top: 1.5rem;
-      border-bottom: 1px solid #ddd;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 0.2rem;
     }
 
     h3 {
-      margin-top: 1.2rem;
       font-size: 16px;
-      color: #d81b60;
+      color: var(--accent-color);
+      margin-top: 1.2rem;
     }
 
     ul {
@@ -62,13 +74,18 @@
       position: fixed;
       top: 10px;
       right: 10px;
-      padding: 0.5rem 1rem;
-      background-color: #d81b60;
+      background-color: var(--accent-color);
       color: white;
+      padding: 0.5rem 1rem;
       border: none;
       cursor: pointer;
       font-size: 14px;
       z-index: 999;
+    }
+
+    a {
+      color: #000;
+      text-decoration: underline;
     }
 
     @media print {
@@ -99,9 +116,6 @@
       <p><strong>Ohio State University</strong><br>B.S. Computer Science<br>May 2024 – GPA: 3.2</p>
       <p><strong>Google IT Certificate</strong><br>IT Support Professional</p>
 
-      <h2>Languages</h2>
-      <p>Japanese – Beginner</p>
-
       <h2>Skills</h2>
       <strong>Technical Skills</strong>
       <ul>
@@ -111,6 +125,10 @@
         <li>Adobe Creative Suite (Photoshop, Illustrator, Premiere)</li>
         <li>HTML, CSS, Web Editing</li>
         <li>Social Media Marketing</li>
+        <li>WordPress CMS</li>
+        <li>SEO Optimization</li>
+        <li>Content Management</li>
+        <li>Google Analytics</li>
         <li>Google Drive</li>
         <li>Canva</li>
         <li>Marketing Research</li>
@@ -125,7 +143,15 @@
         <li>Script Writing</li>
         <li>Caption Writing</li>
         <li>Trend Research</li>
+        <li>Project Management</li>
+        <li>Copywriting</li>
+        <li>Client Communication</li>
+        <li>Editing & Proofreading</li>
       </ul>
+
+      <h2>Languages</h2>
+      <p>Japanese – Beginner</p>
+      
     </aside>
 
     <main>
