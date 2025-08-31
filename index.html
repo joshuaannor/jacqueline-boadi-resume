@@ -1,87 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
   <title>Jacqueline Boadi | Digital Marketing Resume</title>
-  <style>
-    :root {
-      --primary-color: #7d4f44;
-      --light-bg: #fdf8f6;
-      --text-color: #333;
-    }
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <style>
     body {
-      font-family: 'Georgia', serif;
-      color: var(--text-color);
+      font-family: 'Helvetica Neue', sans-serif;
       margin: 0;
-      background: var(--light-bg);
+      padding: 0;
+      background: #fff0f4;
     }
 
     .container {
-      display: flex;
-      max-width: 1050px;
-      margin: auto;
+      max-width: 960px;
+      margin: 0 auto;
       background: white;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      display: flex;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
     }
 
     aside {
       width: 30%;
-      background: var(--primary-color);
-      color: white;
-      padding: 2rem 1.5rem;
-    }
-
-    aside h2 {
-      font-size: 1rem;
-      margin-top: 2rem;
-      border-bottom: 1px solid white;
-      padding-bottom: 0.3rem;
-    }
-
-    aside p, aside li {
-      font-size: 0.9rem;
-      line-height: 1.4;
-    }
-
-    aside ul {
-      padding-left: 1rem;
-    }
-
-    .profile-pic {
-      width: 100px;
-      height: 100px;
-      border-radius: 100%;
-      object-fit: cover;
-      margin-bottom: 1rem;
+      background-color: #fce4ec;
+      padding: 2rem;
+      color: #333;
     }
 
     main {
       width: 70%;
-      padding: 2rem 2.5rem;
+      padding: 2rem;
     }
 
-    .name {
-      font-size: 1.8rem;
-      font-weight: bold;
+    h1 {
       margin: 0;
+      font-size: 24px;
     }
 
-    .title {
-      font-size: 1rem;
-      color: #7d4f44;
-      margin-bottom: 1.5rem;
+    h2 {
+      font-size: 18px;
+      margin-top: 1.5rem;
+      border-bottom: 1px solid #ddd;
     }
 
     h3 {
-      color: var(--primary-color);
-      margin-top: 2rem;
-      font-size: 1.2rem;
+      margin-top: 1.2rem;
+      font-size: 16px;
+      color: #d81b60;
     }
 
     ul {
-      margin: 0;
       padding-left: 1.2rem;
     }
 
@@ -91,67 +60,50 @@
 
     .print-button {
       position: fixed;
-      top: 1rem;
-      right: 1rem;
-      background: var(--primary-color);
+      top: 10px;
+      right: 10px;
+      padding: 0.5rem 1rem;
+      background-color: #d81b60;
       color: white;
       border: none;
-      padding: 0.5rem 1rem;
-      font-size: 0.9rem;
       cursor: pointer;
-      z-index: 1000;
+      font-size: 14px;
+      z-index: 999;
     }
 
-    /* PRINT STYLES */
     @media print {
-      body {
-        -webkit-print-color-adjust: exact !important;
-        print-color-adjust: exact !important;
-      }
-
       .print-button {
         display: none;
       }
 
-      .container {
-        box-shadow: none;
-        max-height: 100vh;
-        overflow: hidden;
-      }
-
-      html, body {
-        height: 100%;
-        overflow: hidden;
-        margin: 0;
-      }
-
       @page {
-        size: A4;
+        size: A3;
         margin: 1in;
       }
     }
   </style>
 </head>
-<body>
 
+<body>
   <button class="print-button" onclick="window.print()">Print Resume</button>
 
-  <div class="container resume-content">
+  <div class="container">
     <aside>
-      <img src="jp-pfp.jpeg" alt="Profile" class="profile-pic"/>
-      
       <h2>Contact</h2>
       <p>📞 (614) 515-1131<br>
          📧 jacquiboadi@gmail.com<br>
-         📍 64 Troy Ct, Westerville, OH 43081<br>
-         🔗 <a href="https://linkedin.com/in/jacqueline-boadi-4a9aa9232/" style="color:white">LinkedIn</a></p>
+         📍 Westerville, OH<br>
+         🔗 <a href="https://linkedin.com/in/jacquelineboadi" target="_blank">LinkedIn</a></p>
 
       <h2>Education</h2>
-      <p><strong>Ohio State University</strong><br>Bachelor's in Computer Science<br>2020–2024</p>
-      <p><strong>Google Career Certificates</strong><br>IT Support Professional Certificate<br>2024</p>
+      <p><strong>Ohio State University</strong><br>B.S. Computer Science<br>May 2024 – GPA: 3.2</p>
+      <p><strong>Google IT Certificate</strong><br>IT Support Professional</p>
+
+      <h2>Languages</h2>
+      <p>Japanese – Beginner</p>
 
       <h2>Skills</h2>
-      <p><strong>Technical Skills</strong></p>
+      <strong>Technical Skills</strong>
       <ul>
         <li>Video Editing</li>
         <li>Graphic Design</li>
@@ -164,7 +116,7 @@
         <li>Marketing Research</li>
       </ul>
 
-      <p><strong>Professional Skills</strong></p>
+      <strong>Professional Skills</strong>
       <ul>
         <li>Attention to Detail</li>
         <li>Content Strategy</li>
@@ -172,42 +124,47 @@
         <li>Creative Direction</li>
         <li>Script Writing</li>
         <li>Caption Writing</li>
+        <li>Trend Research</li>
       </ul>
-
-      <h2>Languages</h2>
-      <p>Japanese – Beginner</p>
     </aside>
 
     <main>
-      <p class="name">JACQUELINE BOADI</p>
-      <p class="title">Digital Marketing Specialist</p>
+      <h1>Jacqueline Boadi</h1>
+      <p><strong>Digital Marketing Specialist</strong></p>
 
-      <h3>Summary</h3>
-      <p>A results-driven digital marketing professional with a proven track record of growing social media presence to 23,000+ followers across Instagram and TikTok. Combines technical expertise from Computer Science background with creative content strategy to drive engagement and conversions. Skilled in performance analytics, brand partnerships, and multimedia content creation. Google IT certified with strong analytical and project management capabilities. Seeking to leverage unique combination of technical skills and social media expertise to advance in digital marketing field.</p>
+      <h2>Summary</h2>
+      <p>Creative and technically skilled Computer Science graduate with 23,000+ followers and strong brand partnership results. Proficient in content creation, video editing, and analytics. Passionate about leveraging creativity and data to build impactful digital experiences.</p>
 
-      <h3>Work Experience</h3>
-      <p><strong>Digital Creator & Social Media Strategist</strong> | Self-Employed<br><em>2019 – Present</em></p>
+      <h2>Experience</h2>
+
+      <h3>API Security Officer | Private Client</h3>
+      <p>Mar 2025 – Present</p>
       <ul>
-        <li>Grew organic following to 23,000+ across Instagram and TikTok through strategic content planning and audience engagement</li>
-        <li>Managed successful brand partnerships with measurable ROI</li>
-        <li>Analyzed performance data using social media tools to optimize posting schedules and content strategy</li>
-        <li>Created multimedia content including graphics, videos, and interactive posts using Adobe Creative Suite</li>
+        <li>Monitor access control and secure infrastructure</li>
+        <li>Respond to incidents and support threat detection</li>
       </ul>
 
-      <p><strong>Security Guard</strong> | G4S Security Services<br><em>May 2021 – Sep 2021</em></p>
+      <h3>Digital Creator | Instagram, TikTok</h3>
+      <p>2019 – Present</p>
       <ul>
-        <li>Monitored access control systems and surveillance equipment, demonstrating attention to detail</li>
-        <li>Maintained detailed reports with 100% accuracy</li>
-        <li>Implemented security protocols and procedures</li>
+        <li>Grew platform to 23,000+ followers with tech and fashion content</li>
+        <li>Collaborated with brands for social campaigns and increased engagement</li>
+        <li>Used analytics to increase follower engagement by 35%</li>
       </ul>
 
-      <p><strong>Packaging Technician</strong> | Amazon<br><em>2020 – Aug 2020</em></p>
+      <h3>Security Guard | G4S Security</h3>
+      <p>May 2021 – Sep 2021</p>
       <ul>
-        <li>Maintained packaging rates of 300+ items per hour while maintaining high standards</li>
-        <li>Troubleshot equipment and collaborated with team members to ensure performance</li>
+        <li>Performed patrols and documented activity</li>
+        <li>Monitored access points and wrote reports</li>
+      </ul>
+
+      <h3>Packaging Tech | Amazon</h3>
+      <p>May 2020 – Aug 2020</p>
+      <ul>
+        <li>Packed 300+ boxes/hr meeting strict quality standards</li>
       </ul>
     </main>
   </div>
-
 </body>
 </html>
