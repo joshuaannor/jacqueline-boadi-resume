@@ -17,6 +17,13 @@
             padding: 20px;
         }
 
+        /* Minimal nav to match site theme */
+        .site-nav { background:#fff; border-bottom:1px solid rgba(0,0,0,0.08); margin:-20px -20px 20px; }
+        .site-nav .nav-inner { max-width:1100px; margin:0 auto; padding:14px 20px; display:flex; align-items:center; justify-content:space-between; }
+        .site-nav .brand { font-weight:bold; letter-spacing:1px; color:#333; }
+        .site-nav .nav-links a { text-decoration:none; color:#333; margin-left:18px; font-size:14px; }
+        .site-nav .nav-links a.active { color:#8b4d43; font-weight:bold; }
+
         .resume-container {
             max-width: 8.5in;
             width: 100%;
@@ -319,6 +326,17 @@
     </style>
 </head>
 <body>
+    <!-- Shared navigation -->
+    <nav class="site-nav">
+      <div class="nav-inner">
+        <div class="brand">Jacqueline Boadi</div>
+        <div class="nav-links">
+          <a href="index.html">Resume</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="about.html">About</a>
+        </div>
+      </div>
+    </nav>
     <div class="resume-container">
         <!-- Header Section -->
         <div class="header">
@@ -506,7 +524,7 @@
         const photoPreview = document.getElementById('photoPreview');
         // Default profile photo from local image
         if (photoPreview) {
-            photoPreview.style.backgroundImage = "url('jp-pfp.jpeg')";
+            photoPreview.style.backgroundImage = "url('assets/media/jp-pfp.jpeg')";
         }
 
         photoInput.addEventListener('change', function(e) {
@@ -568,7 +586,7 @@
         printButton.className = 'no-print';
         printButton.style.cssText = `
             position: fixed;
-            top: 20px;
+            bottom: 20px;
             right: 20px;
             background: #8b4d43;
             color: white;
@@ -581,8 +599,11 @@
         `;
         printButton.onclick = printResume;
         document.body.appendChild(printButton);
-
-        
+        // Highlight active nav link
+        (function(){
+            var links = document.querySelectorAll('.nav-links a');
+            links.forEach(function(a){ if (a.getAttribute('href') === 'index.html') a.classList.add('active'); });
+        })();
     </script>
 
 </body></html>
